@@ -7,9 +7,9 @@ def add(a: float, b: float) -> float:
 
 def subtract(a: float, b: float) -> float:
     """Return a minus b."""
-    raise NotImplementedError("subtract() is not implemented yet")
+    return a - b
 
 
 def multiply(a: float, b: float) -> float:
     """Return a times b."""
-    raise NotImplementedError("multiply() is not implemented yet")
+    return a * b
