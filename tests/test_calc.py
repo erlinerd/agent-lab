@@ -1,5 +1,5 @@
 import pytest
-from src.calc import add, subtract
+from src.calc import add, subtract, multiply
 
 
 def test_add():
@@ -12,3 +12,7 @@ def test_subtract():
 
 def test_subtract_negative_result():
     assert subtract(3, 5) == -2
+
+
+def test_multiply():
+    assert multiply(3, 4) == 12
