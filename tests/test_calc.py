@@ -1,5 +1,5 @@
 import pytest
-from src.calc import add, subtract, multiply
+from src.calc import add, average, subtract, multiply
 
 
 def test_add():
@@ -16,3 +16,15 @@ def test_subtract_negative_result():
 
 def test_multiply():
     assert multiply(3, 4) == 12
+
+
+def test_average():
+    result = average([1, 2, 3])
+
+    assert result == 2.0
+    assert isinstance(result, float)
+
+
+def test_average_empty_list():
+    with pytest.raises(ValueError):
+        average([])

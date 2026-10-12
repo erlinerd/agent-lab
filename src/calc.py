@@ -13,3 +13,10 @@ def subtract(a: float, b: float) -> float:
 def multiply(a: float, b: float) -> float:
     """Return a times b."""
     return a * b
+
+
+def average(numbers: list[float]) -> float:
+    """Return the arithmetic mean of numbers."""
+    if not numbers:
+        raise ValueError("average() requires at least one number")
+    return sum(numbers) / len(numbers)
